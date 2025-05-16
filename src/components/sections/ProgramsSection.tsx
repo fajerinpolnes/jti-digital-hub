@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const programs = [
   {
@@ -66,9 +67,11 @@ const ProgramsSection = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-emerald hover:bg-emerald/90 mt-2">
-                Lihat Detail
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button className="w-full bg-emerald hover:bg-emerald/90 mt-2" asChild>
+                <Link to="/program-studi">
+                  Lihat Detail
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </CardFooter>
           </Card>

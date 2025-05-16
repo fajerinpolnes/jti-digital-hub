@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Link } from "react-router-dom";
 
 // Sample project data
 const projects = [
@@ -127,9 +128,11 @@ const ProjectsSection = () => {
       </Tabs>
       
       <div className="text-center mt-10">
-        <Button size="lg" className="bg-emerald hover:bg-emerald/90">
-          Lihat Semua Karya
-          <ArrowRight className="ml-2 h-4 w-4" />
+        <Button size="lg" className="bg-emerald hover:bg-emerald/90" asChild>
+          <Link to="/karya">
+            Lihat Semua Karya
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
         </Button>
       </div>
     </section>

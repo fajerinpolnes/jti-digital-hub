@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { MapPin, Phone, Mail, Instagram, Youtube, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   return (
@@ -30,12 +31,12 @@ const FooterSection = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Link Cepat</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">Beranda</a></li>
-              <li><a href="#programs" className="hover:underline">Program Studi</a></li>
-              <li><a href="#projects" className="hover:underline">Karya</a></li>
-              <li><a href="#about" className="hover:underline">Tentang Jurusan</a></li>
-              <li><a href="#" className="hover:underline">Fasilitas</a></li>
-              <li><a href="#" className="hover:underline">Berita & Acara</a></li>
+              <li><Link to="/" className="hover:underline">Beranda</Link></li>
+              <li><Link to="/program-studi" className="hover:underline">Program Studi</Link></li>
+              <li><Link to="/karya" className="hover:underline">Karya</Link></li>
+              <li><Link to="/#about" className="hover:underline">Tentang Jurusan</Link></li>
+              <li><Link to="/" className="hover:underline">Fasilitas</Link></li>
+              <li><Link to="/" className="hover:underline">Berita & Acara</Link></li>
             </ul>
           </div>
 
@@ -43,10 +44,10 @@ const FooterSection = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Program Studi</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">D4 Teknik Rekayasa Komputer</a></li>
-              <li><a href="#" className="hover:underline">D4 Teknik Informatika Multimedia</a></li>
-              <li><a href="#" className="hover:underline">D3 Teknik Informatika</a></li>
-              <li><a href="#" className="hover:underline">D3 Teknik Komputer</a></li>
+              <li><Link to="/program-studi" className="hover:underline">D4 Teknik Rekayasa Komputer</Link></li>
+              <li><Link to="/program-studi" className="hover:underline">D4 Teknik Informatika Multimedia</Link></li>
+              <li><Link to="/program-studi" className="hover:underline">D3 Teknik Informatika</Link></li>
+              <li><Link to="/program-studi" className="hover:underline">D3 Teknik Komputer</Link></li>
             </ul>
           </div>
 
